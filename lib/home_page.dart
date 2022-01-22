@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mr_bean/rbrow_nose_painter.dart';
 import 'package:mr_bean/reye_painter.dart';
 
 import 'leye_painter.dart';
@@ -84,6 +85,15 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 child: CustomPaint(
                   painter: lEye(),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                  ),
+                ),
+              ),
+              Container(
+                child: CustomPaint(
+                  painter: rBrowNose(),
                   child: Container(
                     height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
