@@ -39,7 +39,7 @@ class hairPainter extends CustomPainter {
 
     headPath.quadraticBezierTo(size.width * 0.29, size.height * 0.32,
         size.width * 0.315, size.height * 0.42);
-    
+
     canvas.drawPath(headPath, paint);
   }
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mr_bean/reye_painter.dart';
 
-import 'eyebrow_painter.dart';
+import 'rbrow_painter.dart';
 import 'face_painter.dart';
 import 'hair_painter.dart';
 
@@ -63,7 +64,16 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Container(
                 child: CustomPaint(
-                  painter: eyebrowPainter(),
+                  painter: rbrowPainter(),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                  ),
+                ),
+              ),
+              Container(
+                child: CustomPaint(
+                  painter: rEye(),
                   child: Container(
                     height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
