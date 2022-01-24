@@ -4,6 +4,7 @@ import 'package:mr_bean/rcheek_painter.dart';
 import 'package:mr_bean/reye_painter.dart';
 
 import 'beard_painter.dart';
+import 'ear_inside_painter.dart';
 import 'leye_painter.dart';
 import 'rbrow_painter.dart';
 import 'face_painter.dart';
@@ -114,6 +115,15 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 child: CustomPaint(
                   painter: rCheek(),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                  ),
+                ),
+              ),
+              Container(
+                child: CustomPaint(
+                  painter: earInside(),
                   child: Container(
                     height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
