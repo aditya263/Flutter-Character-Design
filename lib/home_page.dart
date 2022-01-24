@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mr_bean/rbrow_nose_painter.dart';
+import 'package:mr_bean/rcheek_painter.dart';
 import 'package:mr_bean/reye_painter.dart';
 
 import 'beard_painter.dart';
@@ -104,6 +105,15 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 child: CustomPaint(
                   painter: lEye(),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width,
+                  ),
+                ),
+              ),
+              Container(
+                child: CustomPaint(
+                  painter: rCheek(),
                   child: Container(
                     height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
