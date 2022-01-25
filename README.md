@@ -1,6 +1,7 @@
-# mr_bean
+# Flutter Character Design
 
-A new Flutter project.
+## Screenshot
+![](assets/image.jpg)
 
 ## Getting Started
 
