@@ -1,6 +1,6 @@
 # Flutter Character Design
 
-## Screenshot
+## ✌ Preview
 ![](assets/image.jpg)
 
 ## Getting Started
